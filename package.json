@@ -1,0 +1,43 @@
+{
+    "name": "sensus",
+    "version": "1.0.0",
+    "description": "Sensus is an API that integrates with OpenAI’s endpoints for content and emotion detection, providing valuable context insights to enhance the functionality of various applications",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "npx esbuild $(esbuild-config)",
+        "development": "wrangler dev src/index.ts",
+        "deploy": "wrangler deploy"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npx run biome"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/scaleflame/sensus.git"
+    },
+    "keywords": [
+        "Node",
+        "TypeScript",
+        "Hono",
+        "OpenAI"
+    ],
+    "author": "ScaleFlame P.C.C.",
+    "license": "https://www.scaleflame.com/legal-documents/software-license",
+    "dependencies": {
+        "hono": "^4.6.9",
+        "openai": "^4.71.0",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^1.9.4",
+        "@cloudflare/workers-types": "^4.20241022.0",
+        "esbuild": "^0.24.0",
+        "esbuild-config": "^1.0.1",
+        "husky": "^9.1.6",
+        "typescript": "^5.6.3",
+        "wrangler": "^3.84.1"
+    }
+}

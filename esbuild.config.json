@@ -1,0 +1,10 @@
+{
+    "entry": "./src/index.ts",
+    "platform": "browser",
+    "target": "es2020",
+    "format": "esm",
+    "bundle": true,
+    "minify": true,
+    "sourcemap": false,
+    "outfile": "./dist/worker.js"
+}

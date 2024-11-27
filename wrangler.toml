@@ -1,0 +1,12 @@
+name = "sensus"
+main = "dist/worker.js"
+
+compatibility_date = "2024-10-21"
+compatibility_flags = [ "nodejs_compat" ]
+
+account_id = "d5b8763094741e6a6d178ad926c00f11"
+
+# wrangler.toml (wrangler v3.79.0^)
+[observability]
+enabled = true
+head_sampling_rate = 1
